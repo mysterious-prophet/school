@@ -1,0 +1,60 @@
+/* menu je převzato ze stránky http://www.cssplay.co.uk/menus/visitedmenu.html a upraveno */
+
+#obsah {
+  margin-left: 8.3em; /* aby nebyl obsah schovaný pod tím absolutně pozicovaným menu #menu */
+}
+
+.schovane { /* pomocí CSS schováme odkaz na menu, které je v HTML až dole (pod obsahem) */
+  position: absolute; left: -9999px; top: -9999px;
+/* Zdroj: https://css-tricks.com/examples/NavCodeAfterContent/ */
+}
+
+#menu {
+  position: absolute; top: 0px; left: 0px; /* aby se menu zobrazovalo vlevo nahoře */
+  width:8em; 
+  padding:0.2em;
+  background:#ccc;
+  margin:0 auto;
+  /* float:left; */
+}
+#menu a {
+  display:block; 
+  width:7em;
+  padding:0.25em 0;
+  color:#000;
+  text-indent:0.2em;
+  background-color:#fff; 
+  text-decoration:none;
+  margin:0.5em 0; 
+  border-left:0.5em solid #9ab; 
+}
+#menu a:hover {
+  color:#f00; 
+  border-left:0.5em solid #000; 
+}
+#actual {
+  color:#909;
+}
+.box {
+  position:relative;
+}
+
+/* styl pro nadpis 2. úrovně */
+h2 {
+  color:#909;
+  background-color:#fcf;
+  margin-top: 2mm;
+  margin-bottom: 5mm;
+}
+
+
+/* a ještě styly pro odstavec */
+p {
+  text-indent: 3mm;
+  margin-top: 0mm;
+  margin-bottom: 0mm;
+}
+p:first-letter { /* první písmeno každého odstavce */
+  color:#909;
+  /* background-color:#fcf; */
+}

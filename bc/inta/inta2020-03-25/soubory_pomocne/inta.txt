@@ -1,0 +1,21 @@
+HTML Formuláře
+==============
+
+V této lekci se seznámíme s HTML formuláři. Naučíme se jak vytvořit základní prvky formuláře, jak je sloučit v jeden formulář a také si řekneme, jak je možné formuláře použít.
+
+Formuláře naleznete téměř na každém webu. Slouží například pro vyhledávání, pro uživatelské komentáře, pro komunikaci mezi tvůrci webu a uživateli nebo také pro přihlášení uživatele atd.
+
+Tvorba formulářů
+----------------
+
+Při tvoření formulářů se používá pouze několik tagů. Všechny vstupní pole sjednocuje v jeden formulář párový tag <form>. Samotná vstupní pole se tvoří pomocí tagů <input>, <textarea> a <select>.
+
+K vytvoření fukčního formuláře, který bude umožňovat uživatelům například vložit komentář ke článku, ovšem samotné HTML stačit nebude. To se stará pouze o vizuální stránku formuláře. K chodu formuláře je třeba ješte skript (například: PHP nebo JavaScript). V této lekci však skripty tvořit nebudeme, naučíme se jak vytvořit formulář pomocí HTML.
+
+tag <form>
+----------
+
+HTML tag <form> je párový tag, kterým se vyznačuje formulář. Uvádí se vždy na začátku a na konci formuláře. Odkazuje se jím také na skript, který má zpracovat data z formuláře a metodu jak mají být data odeslána. Například:
+
+
+-- Převzato a zkráceno. Zdroj: https://www.klikzone.cz/HTML-navod/HTML-formulare.php --

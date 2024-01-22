@@ -1,0 +1,35 @@
+/* CSS Document */
+
+.chyba { color:red; }
+.uspech { color:#33CC33; }
+
+.sipka {border: 10px solid transparent; width: 0px; height: 0px; display: inline-block; position: relative}
+.dolu {border-top: 15px solid #000000; top: 5px}
+.nahoru {border-bottom: 15px solid #000000; top: -5px}
+.doluT {border-top: 15px solid #FF0000; top: 5px}
+.nahoruT {border-bottom: 15px solid #FF0000; top: -5px}
+
+table { border-style: solid; border-collapse: collapse;}
+table tr:first-child { font-weight: bold; }
+td, th { border: 1px solid gray; }
+#menu {
+  list-style-type: none;
+  width:8em; 
+  padding:0.5em; 
+  background:#ccc;
+  margin:0 auto;
+  float:left;
+}
+#menu a {
+  display:block; 
+  width:7em;
+  padding:0.25em 0;
+  color:#000;
+  text-indent:0.2em;
+  background-color:#fff; 
+  text-decoration:none;
+  margin:0.5em 0; 
+  border-left:0.5em solid #9ab; 
+}
+#akt { font-weight: bold; }
+           
