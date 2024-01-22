@@ -1,0 +1,11 @@
+release/cerv.o
+release/main.o
+release/mainwindow.o
+release/napovedahra.o
+release/nastaveni.o
+release/oautorovi.o
+release/qrc_bonikony.o
+release/moc_mainwindow.o
+release/moc_napovedahra.o
+release/moc_nastaveni.o
+release/moc_oautorovi.o

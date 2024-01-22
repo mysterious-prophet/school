@@ -1,0 +1,11 @@
+debug/cerv.o
+debug/main.o
+debug/mainwindow.o
+debug/napovedahra.o
+debug/nastaveni.o
+debug/oautorovi.o
+debug/qrc_bonikony.o
+debug/moc_mainwindow.o
+debug/moc_napovedahra.o
+debug/moc_nastaveni.o
+debug/moc_oautorovi.o
