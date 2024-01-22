@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/draw.png</file>
+        <file>icons/abort.png</file>
+        <file>icons/preferences.png</file>
+        <file>icons/quit.png</file>
+        <file>translations/fractals_cz.qm</file>
+    </qresource>
+</RCC>
