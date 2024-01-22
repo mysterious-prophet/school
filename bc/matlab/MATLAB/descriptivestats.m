@@ -1,0 +1,11 @@
+function out = descriptivestats(A)
+n = size(A, 1);
+out.prum = mean(A);
+out.modus = mode(A);
+out.medi = median(A);
+out.maxi = max(A);
+out.mini = min(A);
+out.stdev = std(A);
+out.skew = skewness(A);
+out.kurt = kurtosis(A);
+out.nobs = n*ones(1, size(A, 2));
