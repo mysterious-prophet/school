@@ -1,0 +1,3 @@
+java -cp D:\media\school\java\consoleChat\target\classes serverEnd.chatServer 9999
+
+java -cp D:\media\school\java\consoleChat\target\classes clientEnd.chatClient localhost 9999
