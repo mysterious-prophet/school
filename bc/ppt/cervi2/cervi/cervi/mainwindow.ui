@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>650</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>750</width>
+    <height>750</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Achtung! Die Linie</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="novaHraBt">
+    <property name="geometry">
+     <rect>
+      <x>275</x>
+      <y>250</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hrát</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="hrac1Le">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>150</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hráč1</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="hrac2Le">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>150</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hráč2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hrac1Lb">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>125</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Zadejte jméno Hráče 1:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hrac2Lb">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>125</y>
+      <width>150</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Zadejte jméno Hráče 2: </string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>750</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHra">
+    <property name="title">
+     <string>Hra</string>
+    </property>
+    <addaction name="actionNova_hra"/>
+    <addaction name="separator"/>
+    <addaction name="actionKonec"/>
+   </widget>
+   <widget class="QMenu" name="menuNastaveni">
+    <property name="title">
+     <string>Nastavení</string>
+    </property>
+    <addaction name="actionNastaveni_Hry"/>
+   </widget>
+   <widget class="QMenu" name="menuInformace">
+    <property name="title">
+     <string>Nápověda</string>
+    </property>
+    <addaction name="actionHra"/>
+    <addaction name="separator"/>
+    <addaction name="actionO_autorovi"/>
+   </widget>
+   <addaction name="menuHra"/>
+   <addaction name="menuNastaveni"/>
+   <addaction name="menuInformace"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionNova_hra">
+   <property name="text">
+    <string>Nová hra</string>
+   </property>
+  </action>
+  <action name="actionKonec">
+   <property name="text">
+    <string>Konec</string>
+   </property>
+  </action>
+  <action name="actionNastaveni_Hry">
+   <property name="text">
+    <string>Nastavení hry</string>
+   </property>
+  </action>
+  <action name="actionHra">
+   <property name="text">
+    <string>Hra</string>
+   </property>
+  </action>
+  <action name="actionO_autorovi">
+   <property name="text">
+    <string>O autorovi</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

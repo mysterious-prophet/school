@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>bonIkony/01.png</file>
+        <file>bonIkony/02.png</file>
+        <file>bonIkony/03.png</file>
+        <file>bonIkony/04.png</file>
+        <file>bonIkony/05.png</file>
+        <file>bonIkony/06.png</file>
+        <file>bonIkony/07.png</file>
+    </qresource>
+</RCC>
