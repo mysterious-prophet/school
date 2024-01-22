@@ -1,0 +1,4 @@
+Algorithm;Complexity;Run 1 preprocess time [ms];Run 1 search time [ms];Run 1 total time [ms];Run 2 preprocess time [ms];Run 2 search time [ms];Run 2 total time [ms];Run 3 preprocess time [ms];Run 3 search time [ms];Run 3 total time [ms];Avg. preprocess time [ms];Avg. search time [ms];Avg. total time [ms]
+Elementary;O(mn);-;5498.87;5498.87;-;6020.163;6020.163;-;5713.645;5713.645;-;5744.226;5744.226
+KMP;O(m+n);0.0;2500.353;2500.353;0.0;2268.66;2268.66;0.0;2642.622;2642.622;0.0;2470.545;2470.545
+BM;O(m);0.0;2681.075;2681.075;0.0;2855.642;2855.642;0.0;2865.243;2865.243;0.0;2800.653;2800.653

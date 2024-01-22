@@ -1,0 +1,7 @@
+File size [MB];Algorithm;Complexity;Avg. preprocess time [s];Avg. search time [s];Avg. total time [s]
+13.86;Elementary;O(mn);-;36.791;36.791
+13.86;KMP;O(m+n);0.001;16.247;16.248
+13.86;BM;O(m);0.004;17.479;17.483
+13.86;AC;O(n + m + z);0.0;15.286;15.286
+13.86;CW;O(nm);0.0;10.656;10.656
+13.86;DKA;O(n);0.015;25.876;25.891

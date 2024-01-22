@@ -1,0 +1,7 @@
+File size [MB];Algorithm;Complexity;Run 1 preprocess time [ms];Run 1 search time [ms];Run 1 total time [ms];Avg. preprocess time [ms];Avg. search time [ms];Avg. total time [ms]
+13.86;Elementary;O(mn);-;3884.755;3884.755;-;3884.755;3884.755
+13.86;KMP;O(m+n);0.0;1630.477;1630.477;0.0;1630.477;1630.477
+13.86;BM;O(m);0.0;3064.02;3064.02;0.0;3064.02;3064.02
+13.86;AC;O(n + m + z);0.0;8421.284;8421.284;0.0;8421.284;8421.284
+13.86;CW;O(nm);0.0;7622.172;7622.172;0.0;7622.172;7622.172
+13.86;DKA;O(n);140.974;1402.533;1543.5069999999998;140.974;1402.533;1543.507
