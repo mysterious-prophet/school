@@ -1,0 +1,45 @@
+%% factorial
+a = input('a: ')
+factorial(a);
+
+%% matrices
+m = 3;
+n = 3;
+X = rand(m, n);
+
+sum_X = sum(sum(X));
+max_X = max(max(X));
+min_X = min(min(X));
+
+Y = rand(m, n);
+inv_Y = inv(Y);
+
+% Z = inv_Y * (X / sum_X);
+Z = Y \ (X / sum_X);
+
+%% plotting
+x = 0:pi/20:2*pi;
+y1 = sin(x);
+y2 = cos(x);
+y3 = ones(1, size(x, 2));
+figure;
+hold on
+plot(x, y1, 'LineWidth', 3);
+plot(x, y2, '--');
+plot(x, y3, 'rx');
+hold off
+axis([0 2*pi -1.5 1.5]);
+title('Exercise plot');
+legend('sin(x)', 'cos(x)', '1(x)', 'Location', 'best');
+xlabel('x');
+ylabel('f(x)');
+
+%% limit
+syms x n;
+lim_x = limit((1 - cos(x))/x^2, x, 0);
+
+exp_x = limit((1 + x/n)^n, n, inf);
+
+f = exp_x * cos(x);
+der_f = diff(f);
+

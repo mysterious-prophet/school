@@ -1,0 +1,17 @@
+1. Write script main.m, which will call function factorial(n) with one input (a whole number based on user prompt) and one output (calculated factorial of the input number). Function factorial should be your own implementation using cycles, conditions for input, etc. Write out the result into the command window.
+
+2. In main.m, call your own implementation of function quadSolver(a, b, c), which will solve any quadratic equation a^2*x+b*x+c = 0 and return its roots. Function quadSolver should use if condition based on the value of discriminant and should display a message (command disp) if there is no real solution. Test your program on: 
+
+	a) a = 1; b = 4; c = -5;
+	b) a = 1; b = -10; c = 25;
+	c) a = 5; b = 4; c = 10;	
+
+3. In main.m, declare variables m, n and assign them an integer value. Generate a random uniformly distributed matrix A of size (m x n). Calculate the sum of all elements of A, maximum of A, minimum of A. Declare another random matrix b of size (m x 1). Calculate the inverse of A and multiply it with b, thus receiving a solution to Ax = b.
+
+4. In main.m, plot the sine and cosine of x in the interval [0, 2*pi] with step pi/20. Also, plot a constant function with value 1 on the same interval. All plots should be in one figure (use hold on, hold off commands), with sine using a LineWidth 3, cosine shown as a green, dashed line, and the constant function using red xs. Limit the axes to intervals [0, 2*pi] and [-1.5, 1.5] Figure should contain a title, a titled legend placed in the best location and axis labels. Put a command clearing all variables, the command window, and closing all plot windows in the begging of the script main.m.
+
+5. a) In main.m, call function symbEx with no input paramaters, which, using symbollic programming, will calculate and return the value of the limit lim_{x -> 0} (1-cos(x))/x^2. 
+
+   b) In symbEx.m, using symbollic programming and your knowledge of mathematical analysis, define the variable exp_x as the exp(x) using a limit. Next, define a function f as exp_x / cos(x) and using the command diff(f), calculate the derivative of f der_f and return it as an output to main.m.
+
+6. In main.m, using the command x = randi(1000, 1, 10);, generate a vector x of size (1 x 10) of 10 pseudorandom integers in range 1 to 1000. Write a function bubleSort(x), which will sort x in ascending order using the bubble sort method and return the sorted x to main. 
