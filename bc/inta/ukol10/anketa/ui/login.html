@@ -1,0 +1,29 @@
+<form class="form-horizontal" action="{{ @BASE }}/login" method="post">
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="username">Jméno</label>
+            <div class="col-md-4">
+                <input id="username" name="username" type="text" placeholder="Jméno" class="form-control input-md" required>
+                <span class="help-block">Zadejte své jméno</span>
+            </div>
+        </div>
+
+        <!-- Password input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="password">Heslo</label>
+            <div class="col-md-4">
+                <input id="password" name="password" type="password" placeholder="Heslo" class="form-control input-md" required>
+                <span class="help-block">Zadejte své heslo</span>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="submit"></label>
+            <div class="col-md-4">
+                <button id="submit" name="submit" class="btn btn-primary">Přihlásit</button>
+            </div>
+        </div>
+
+</form>

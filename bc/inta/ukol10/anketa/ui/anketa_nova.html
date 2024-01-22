@@ -1,0 +1,57 @@
+<form class="form-horizontal" action="{{ @BASE }}/survey" method="post">
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textot">Text otázky</label>
+            <div class="col-md-4">
+                <input id="textot" name="textot" type="text" placeholder="Otázka" class="form-control input-md" required>
+                <span class="help-block">Zadejte text otázky</span>
+            </div>
+        </div>
+
+        <!-- Date1 input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="od">Platnost od</label>
+            <div class="col-md-4">
+                <input id="od" name="odkdy" type="date" placeholder="Datum začátku zobrazování ankety na webu" class="form-control input-md" required>
+                <span class="help-block">Zadejte začátek zobrazování ankety na webu</span>
+            </div>
+        </div>
+
+        <!-- Date2 input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="do">Platnost do</label>
+            <div class="col-md-4">
+                <input id="do" name="dokdy" type="date" placeholder="Datum konce zobrazování ankety na webu" class="form-control input-md">
+                <span class="help-block">(Nepovinný) konec zobrazování ankety na webu</span>
+            </div>
+        </div>
+		
+		<!-- Texty odpovedi (inputs) -->
+	<repeat group="{{@pocet_odpo}}" value="{{@cislo}}">
+		<div class="form-group">
+            <label class="col-md-4 control-label" for="odp{{@cislo}}">Odpověď {{@cislo}}</label>
+            <div class="col-md-3">
+                <input id="odp{{@cislo}}" name="odp[]" type="text" placeholder="Text {{@cislo}}. odpovědi" class="form-control input-md" 
+				<check if="{{@cislo}}<=2">
+				required
+				</check>
+                >
+                <span class="help-block">Zadejte text {{@cislo}}. odpovědi</span>
+            </div>
+            <div class="col-md-1">
+                <input name="barva[]" type="color" class="form-control input-md" required>
+            </div>
+        </div>
+	</repeat>
+
+
+        <!-- Button -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="submit"></label>
+            <div class="col-md-4">
+                <button id="submit" name="submit" class="btn btn-primary">Vytvořit</button>
+            </div>
+        </div>
+
+</form>

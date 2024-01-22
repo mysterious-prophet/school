@@ -1,0 +1,23 @@
+CREATE TABLE SKOLA(
+    idsk INT NOT NULL PRIMARY KEY,
+    nazev VARCHAR(50) NOT NULL,
+    zkratka VARCHAR(10) NOT NULL UNIQUE,
+    mesto VARCHAR(35) NOT NULL
+); 
+
+CREATE TABLE STUDENT(
+    idst INT NOT NULL PRIMARY KEY,
+    jmeno VARCHAR(35) NOT NULL,
+    prijmeni VARCHAR(50) NOT NULL,
+    datum_narozeni DATE NOT NULL
+); 
+
+CREATE TABLE STUDIUM(
+    kdo INT NOT NULL,
+    kde INT NOT NULL,
+    od_kdy DATE NOT NULL,
+    do_kdy DATE,
+    FOREIGN KEY(kdo) REFERENCES STUDENT(idst),
+    FOREIGN KEY(kde) REFERENCES SKOLA(idsk),
+    PRIMARY KEY(kdo, kde)
+);

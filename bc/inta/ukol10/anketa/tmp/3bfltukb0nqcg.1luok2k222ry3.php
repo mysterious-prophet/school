@@ -1,0 +1,1 @@
+<p>Tato miniaplikace ukazuje možnosti Fat-Free Frameworku (anketní systém).</p>

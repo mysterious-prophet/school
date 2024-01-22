@@ -1,0 +1,46 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Javascript</title>
+
+</head>
+<body>
+<script>
+alert("Vitejte");
+
+for(j=0;j<=9;j++){
+	alert("Faktorial cisla " + j + " je: " + faktorial(j));
+}
+
+function faktorial(n){
+	f = 1;
+	for(i=1; i<=n; i++){
+		f=f*i;
+	}
+	return f;
+}
+
+document.writeln("<br/>navigator.appCodeName: "+navigator.appCodeName);  
+document.writeln("<br/>navigator.appName: "+navigator.appName);  
+document.writeln("<br/>navigator.appVersion: "+navigator.appVersion);  
+document.writeln("<br/>navigator.cookieEnabled: "+navigator.cookieEnabled);  
+document.writeln("<br/>navigator.language: "+navigator.language);  
+document.writeln("<br/>navigator.userAgent: "+navigator.userAgent);  
+document.writeln("<br/>navigator.platform: "+navigator.platform);  
+document.writeln("<br/>navigator.onLine: "+navigator.onLine); 
+
+odp=confirm("Libi se ti to?");
+if (odp){
+	alert("Hura, libi se ti to");
+}
+else{
+	alert("COZE? Nelibi?");
+}
+
+</script>
+
+</body>
+
+</html>
+
