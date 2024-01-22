@@ -1,0 +1,8 @@
+Data nactena ze souboru input.txt: 
+867 456 973 235 2042 45896 1993 19 23875 19365 
+Po serazeni dat min to max: 
+19 235 456 867 973 1993 2042 19365 23875 45896 
+Maximum: 45896
+Minimum: 19
+Prumer: 9572.10
+Median: 1483.0
