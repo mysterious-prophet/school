@@ -1,0 +1,28 @@
+﻿  Compiling CUDA source file matrixMult.cu...
+  
+  D:\media\school\ing\paa\cuda\matrixMult\matrixMult\matrixMult>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc143.pdb /FS /Zi /RTC1 /MDd " -o D:\media\school\ing\paa\cuda\matrixMult\matrixMult\matrixMult\x64\Debug\matrixMult.cu.obj "D:\media\school\ing\paa\cuda\matrixMult\matrixMult\matrixMult\matrixMult.cu" 
+D:\media\school\ing\paa\cuda\matrixMult\matrixMult\matrixMult\matrixMult.cu(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\media\school\ing\paa\cuda\matrixMult\matrixMult\matrixMult\matrixMult.cu(13): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  matrixMult.cu
+D:\media\school\ing\paa\cuda\matrixMult\matrixMult\matrixMult\matrixMult.cu(71): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+D:\media\school\ing\paa\cuda\matrixMult\matrixMult\matrixMult\matrixMult.cu(72): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+D:\media\school\ing\paa\cuda\matrixMult\matrixMult\matrixMult\matrixMult.cu(76): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'std::string'
+D:\media\school\ing\paa\cuda\matrixMult\matrixMult\matrixMult\matrixMult.cu(86): warning C4244: '=': conversion from 'int' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+D:\media\school\ing\paa\cuda\matrixMult\matrixMult\matrixMult\matrixMult.cu(114): warning C4018: '<': signed/unsigned mismatch
+D:\media\school\ing\paa\cuda\matrixMult\matrixMult\matrixMult\matrixMult.cu(115): warning C4018: '<': signed/unsigned mismatch
+D:\media\school\ing\paa\cuda\matrixMult\matrixMult\matrixMult\matrixMult.cu(184): warning C4068: unknown pragma 'unroll'
+D:\media\school\ing\paa\cuda\matrixMult\matrixMult\matrixMult\matrixMult.cu(409): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\algorithm(3635): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  D:\media\school\ing\paa\cuda\matrixMult\matrixMult\matrixMult\matrixMult.cu(107): note: see reference to function template instantiation 'void std::generate<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,getRandomOptMatrixValues::<lambda_588bd725ab825f6a954240752725c7b3>>(_FwdIt,_FwdIt,_Fn)' being compiled
+          with
+          [
+              _Ty=float,
+              _FwdIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<float>>>,
+              _Fn=getRandomOptMatrixValues::<lambda_588bd725ab825f6a954240752725c7b3>
+          ]
+D:\media\school\ing\paa\cuda\matrixMult\matrixMult\matrixMult\matrixMult.cu(78): warning C4715: 'loadSimpleMatrix': not all control paths return a value
+  matrixMult.vcxproj -> D:\media\school\ing\paa\cuda\matrixMult\matrixMult\x64\Debug\matrixMult.exe

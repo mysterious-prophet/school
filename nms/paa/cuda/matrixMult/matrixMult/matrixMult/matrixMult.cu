@@ -266,7 +266,7 @@ void matrixOptMultCUDA(const int max_size, const matrix_vals_type* matrix_a, con
 	// using (static) shared memory is faster than global memory
 	// https://developer.nvidia.com/blog/using-shared-memory-cuda-cc/
 	// all threads in the block have access to the same shared memory
-	// To ensure correct results when parallel threads cooperate, we must synchronize the threads. CUDA provides a simple barrier synchronization primitive, __syncthreads(). A thread s execution can only proceed past a __syncthreads() after all threads in its block have executed the __syncthreads()
+	// To ensure correct results when parallel threads cooperate, we must synchronize the threads. CUDA provides a simple barrier synchronization primitive, __syncthreads(). A thread’s execution can only proceed past a __syncthreads() after all threads in its block have executed the __syncthreads()
 	// could also be implemented as 2d - no improvement
 	__shared__ matrix_vals_type shared_a[max_dim];
 	__shared__ matrix_vals_type shared_b[max_dim];
