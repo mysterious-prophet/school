@@ -1,0 +1,8 @@
+Algorithm;Avg. compression ratio [%];Avg. compression time [s];Input file size [MB];Encoded file size [MB]
+RLE;393.83;27.86;100.0;392.49
+SHF;71.19;14.74;100.0;70.94
+HUFF;58.68;13.26;100.0;58.48
+FGK;58.7;60.9;100.0;58.5
+VTTR;58.69;158.45;100.0;58.49
+LZ77;48.63;101.45;100.0;48.47
+LZ78;33.93;47.46;100.0;33.82

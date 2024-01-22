@@ -1,0 +1,20 @@
+# Print the original, encoded and decoded text
+PRINT_INFO: False
+
+# Print the compression ratio
+DEBUG: True
+
+
+
+## Benchmark settings
+# Number of iterations that the benchmark will do
+NUM_ITERATIONS: 1
+
+# Default accuracy that time in ms and compression ratios in % will be rounded to
+DEC_ACCURACY: 2
+
+# Save individual runs of the benchmark (the runs will still happen)
+SAVE_INDIVIDUAL_RUNS: False
+
+# Save benchmark results
+SAVE_RESULTS: True
