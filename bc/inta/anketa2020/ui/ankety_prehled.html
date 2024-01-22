@@ -1,0 +1,23 @@
+<exclude>Zde bude zobrazen přehled anket, na které lze hlasovat (přihlášený uživatel uvidí i "budoucí" a "minulé" ankety).
+Data dostane z kontroleru (s ohledem na přihlášení uživatele) => pole $ankety=array(idot,textot,aktualni,detaily).</exclude>
+
+<check if="{{ count(@ankety) }}">
+<true>
+<p>Přehled anket, v nichž lze hlasovat:</p>
+<repeat group="{{@ankety}}" value="{{@prvek}}">
+  <check if="{{ @prvek['aktualni'] }}">
+  <true>
+    <p><a href="{{ @BASE }}/vote/{{ @prvek['idot'] }}" title="hlasovat">{{@prvek['textot']}}</a> {{ @prvek['detaily'] }}</p>
+  </true>
+  <false>
+    <check if="{{ isset(@SESSION.userID) }}">
+      <p><a href="{{ @BASE }}/vote/{{ @prvek['idot'] }}" title="hlasovat">{{@prvek['textot']}}</a> {{ @prvek['detaily'] }}</p>
+    </check>
+  </false>
+  </check>
+</repeat>
+</true>
+<false>
+<p>Prozatím neexistují žádné ankety, ve kterých by bylo možno hlasovat.</p>
+</false>
+</check>

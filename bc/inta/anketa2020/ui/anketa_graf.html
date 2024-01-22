@@ -1,0 +1,15 @@
+<exclude>Zde bude zobrazena tabulka s výsledky hlasování.
+Data dostane z kontroleru (s ohledem na přihlášení uživatele) => text $otazka, pole $odpovedi=array(odp,pocet,b).</exclude>
+
+<h3>{{ @otazka }}</h3>
+
+<table>
+<thead>
+  <tr><th>Odpověď</th><th>Počet hlasů</th></tr>
+</thead>
+<tbody>
+<repeat group="{{@odpovedi}}" value="{{@prvek}}">
+  <tr style="color:#{{ @prvek['b'] }}"><td>{{ @prvek['odp'] }}</td><td>{{ @prvek['pocet'] }}</td></tr>
+</repeat>
+</tbody>
+</table>

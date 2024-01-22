@@ -1,0 +1,27 @@
+<h3>{{ @anketni_otazka}}</h3>
+
+
+<form class="form-horizontal" action="{{ @BASE }}/vote/{{ @PARAMS.id_ankety }}" method="post">
+<!-- Texty odpovědí (multiple radios) -->
+<div class="row">
+  <div class="col-lg-6">
+  <repeat group="{{@odpovedi}}" value="{{@text_odpovedi}}" key="{{@idodpo}}">
+    <exclude><label><input type="radio" name="odpoved" value="{{ @idopdo }}">  {{ @text_odpovedi }}</label></exclude>
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="radio" name="odpoved" value="{{ @idodpo }}" id="text{{ @idodpo }}">
+      </span>
+      <label class="control-label" for="text{{ @idodpo }}">{{ @text_odpovedi }}</label>
+    </div><exclude>.input-group</exclude>
+  </repeat>
+  </div><exclude>.col-lg-6</exclude>
+</div><exclude>.row</exclude>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-4">
+    <button id="submit" name="submit" class="btn btn-primary">Hlasuj</button>
+  </div>
+</div>
+</form>
