@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Formulář</title>
+</head>
+
+<body>
+<div id="formular">
+	<form action="" method="get">
+
+		<label for="jmeno">Jméno</label>
+		<input type="text" id="jmeno" name="jmeno" maxlength="18"><br>
+
+		<label for="heslo">Heslo</label>
+		<input type="password" id="heslo" name="heslo"><br>
+
+		<label for="vzkaz">Vzkaz</label><br>
+		<textarea id="vzkaz" name="vzkaz" rows="3" cols="30"></textarea><br>
+
+		<label>Oblíbený alkohol</label><br>
+			<label for="rum">Rum</label>
+			<input type="radio" id="rum" name="alko"><br>
+			<label for="fernet">Fernet</label>
+			<input type="radio" id="fernet" name="alko"><br>
+			<label for="pivo">Pivo</label>
+			<input type="radio" id="pivo" name="alko"><br>
+			<label for="vino">Víno</label>
+			<input type="radio" id="vino" name="alko"><br>
+
+		<label>Oblíbené nealko</label><br>
+			<label for="dzus">Džus</label>
+			<input type="radio" id="dzus" name="nealko"><br>
+			<label for="voda">Voda</label>
+			<input type="radio" id="voda" name="nealko"><br>
+			<label for="mineralka">Minerálka</label>
+			<input type="radio" id="mineralka" name="nealko"><br>
+
+		<label for="stat">Stát</label><br>
+		<select id="stat" name="stat">
+			<option value="Cesko">Česko</option>
+			<option value="Nemecko">Německo</option>
+			<option value="Rakousko">Rakousko</option>
+			<option value="Slovensko">Slovensko</option>
+			<option value="Polsko">Polsko</option>
+		</select><br>
+
+		<label for="sport">Sporty</label><br>
+		<select id="sport" name="sport" size="3" multiple>
+			<option value="fotbal">Fotbal</option>
+			<option value="hokej">Hokej</option>
+			<option value="tenis">Tenis</option>
+			<option value="box">Box</option>
+			<option value="beh">Běh</option>
+			<option value="plavani">Plavání</option>
+		</select><br>
+
+		<label for="souhlas">Souhlasím s odesláním</label>
+		<input type="checkbox" id="souhlas" name="souhlas"><br>
+
+		<input type="submit" id="odeslat" name="odeslat" value="Odeslat"><br>
+
+	</form>
+</div>
+</body>
+
+</html> 

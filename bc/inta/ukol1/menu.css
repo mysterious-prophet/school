@@ -1,0 +1,50 @@
+﻿/* menu bylo převzato v roce 2012 ze stránky http://www.cssplay.co.uk/menus/visitedmenu.html a upraveno */
+
+#menu { /* styl pro menu */
+  /* position: relative; */
+  padding: 5px;
+  margin-right: 10px;
+  background-color: #CCCCCC;
+  float: left;
+}
+#menu a { /* styl pro odkazy v menu */
+  display:block; /* jako "inline" jsou řádky příliš úzké */
+  color:#000000;
+  background-color:#FFFFFF; 
+  text-indent:0.2em;
+  text-decoration:none;
+  padding:3px;
+  border-left:0.5em solid #990099; 
+  margin:4px; 
+}
+#menu a:hover {
+  color:#FF0000; 
+  border-left:0.5em solid #000000; 
+}
+
+#actual {
+  color:#990099;
+}
+
+.box {
+  position:relative;
+}
+
+/* styl pro nadpis 2. úrovně */
+h2 {
+  color:#990099;
+  margin-top:1em;
+  margin-bottom:0.7em;
+}
+
+
+/* a ještě styly pro odstavec */
+p {
+  text-indent: 5mm;
+  margin-top: 0mm;
+  margin-bottom: 0mm;
+}
+p:first-letter {
+  color:#990099;
+  background-color:#FFCCFF;
+}
