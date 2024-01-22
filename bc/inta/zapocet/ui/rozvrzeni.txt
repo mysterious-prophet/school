@@ -1,0 +1,36 @@
+eshop na deskove hry - pouzit bootstrap?
+
+hry
+	classic - chess, monopoly, ludo
+	lovecraft - arkham LCG, eldritch horror, mansions of madness
+	party - codenames, activity, bang!
+
+hlavni stranka - uvod/main.html
+	nalevo 
+		logo - funguje jako odkaz na hlavni stranku
+		kategorie - spolecenske, hlavolamy, puzzle atd.
+		nejprodavanejsi
+	uprostred a napravo 
+		nahore vyhledavac, prihlaseni, kosik
+		uprostred prehled produktu ve sleve, tipy atd.
+		dole footer o nas, doprava, platba
+prihlaseni - login.html
+	jmeno, heslo, prihlasit
+odhlaseni - userLogout.html
+	odhlaseni probehlo uspesne
+stranka bezneho uzivatele - user.html
+	osobni udaje - jmeno, adresa
+	zmenit osobni udaje, heslo
+	predesle objednavky
+	wishlist
+stranka administratora
+	pridani zalozky adminstrace - spravovani uzivatelu, produktu atd.
+kosik - cart.html
+	seznam produktu v kosiku nebo nic neni
+stranka produktu (2-3 produkty na kategorii, celkem cca 5-10) - productName.html
+	obrazek, popis, skladem, cena, koupit
+kategorie (3) - categoryName.html
+	jako hlavni stranka
+	vlevo filtr - cena, pocet hracu, doba hrani
+	vpravo jako na hlavni strance produkty dle databaze
+

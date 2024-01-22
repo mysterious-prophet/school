@@ -1,0 +1,5 @@
+hledani
+prihlaseni, odhlaseni uzivatele
+nakup - pridani do kosiku, vyplneni udaju, dokonceni objednavky, zaplaceni
+prihlaseni k newsletteru
+

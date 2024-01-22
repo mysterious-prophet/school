@@ -1,0 +1,21 @@
+general
+	cart and order
+		create cart - php
+		add to cart action - php
+		remove from car - php
+		checkout forms and order actions - php
+	subscribe
+		subscribe action - php
+	user actions
+		login action - php
+		register action - php
+		forgot password - php
+
+category page
+	filter - js
+		connect filters together
+
+product page
+	modal doesn't work on localhost
+
+
