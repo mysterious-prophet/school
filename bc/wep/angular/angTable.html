@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th , td  { <!--formatovani tabulky -->
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init="names=[{Name:'Jose', Country:'Argentina'}, {Name:'Jake', Country:'USA'}, {Name:'Gwennyfer', Country:'Australia'}]"> 
+
+<table>
+  <tr ng-repeat="x in names | orderBy : 'Name'">
+    <td> {{$index +1 }} </td> <!--priradi do prvniho sloupce index -->
+	<td>{{ x.Name }}</td>
+    <td>{{ x.Country | lowercase}}</td>
+  </tr>
+</table>
+
+</div>
+
+
+</body>
+</html>

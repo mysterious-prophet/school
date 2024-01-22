@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+<html lang="en-US"> <!-- umozni pouzivat AngularJS verze 1.7.9 -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init="firstName='John'; 
+myCol='yellow'; 
+quantity=2; 
+cost=[1,15,19,2,40]; 
+person={firstName:'James',lastName:'Lark'}"> <!-- direktiva ng-app definuje aplikaci AngularJS "firstEx"-->
+	<p>The name is <span data-ng-bind="firstName"></span></p>
+	<p>Name : <input type="text" data-ng-model="name"></p> <!-- ng-model priradi hodnotu inputu do "name" -->
+	<p>Hello </p> <span data-ng-bind="name"></span></p> <!-- ng-bind priradi hodnotu "name" tagu p - priklad tzv. two-way binding -->
+	<p>Hello {{name | uppercase}}</p> <!-- zde alternativni formulace ng-bind {{name}} je tzv. expression, vyraz, dale pouzit filtr na uppercase -->
+	<p>Hello {{person.firstName | lowercase}}</p>
+	<p>My first expression: {{ 5 + 5 }}</p>
+  
+	<input style="background-color:{{myCol}}" ng-model="name" >
+	<p>Total in dollar: {{ quantity *  cost[2] | currency}}</p>
+	<span ng-bind="quantity * cost[2] | number "></span>
+	
+	<li ng-repeat="x in cost | filter: 19"> <!-- loop pomoci ng-repeat spojeny s filtrem hodnot ktere odpovidaji 19-->
+      {{ x | json}} <!-- vypis hodnot ve formatu json string -->
+    </li>
+
+	
+</div>
+
+<div> <!--pokud vyraz neni v aplikaci AngularJS tak se neprelozi korektne -->
+  <p>My first expression: {{ 5 + 5 }}</p>
+</div>
+
+
+</body>
+</html> 

@@ -1,0 +1,28 @@
+ <!DOCTYPE html>
+<html lang="en-US"> <!-- umozni pouzivat AngularJS verze 1.7.9 -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+<body ng-app="myApp">
+
+<test-directive></test-directive> <!-- tyto dve formulace maji totozny vysledek -->
+
+<div test-directive></div>
+
+
+<div class="test-directive"></div>
+
+
+<script>
+var app = angular.module("myApp", []);
+app.directive("testDirective", function() {
+  return {
+	<!--restrict : "C",--> <!--je nutne pridat restrikci "C" aby bylo mozne pouzit treti formulaci pro tridy-->
+	<!-- dale E pro element name (pr 1), A pro atribute (pr 2), M pro comment, defaultne EA -->
+	restrict: "EAC",
+    template : "<h1>Made by a directive!</h1>"
+  };
+});
+
+</script>
+</script>
+</body>
+</html> 

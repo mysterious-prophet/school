@@ -1,0 +1,28 @@
+ <!DOCTYPE html>
+<html lang="en-US"> <!-- umozni pouzivat AngularJS verze 1.7.9 -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+<body>
+
+<div data-ng-app="myApp" data-ng-controller="myCtrl"> <!--definuje aplikaci AngularJS "myApp" kontrolovanou controllerem "myCtrl"-->
+
+First Name: <input type="text" data-ng-model="firstName"><br> <!--view sekce-->
+Last Name: <input type="text" data-ng-model="lastName"><br>
+<br>
+Full Name: {{firstName + " " + lastName}} <br>
+Title: {{title}}
+
+</div>
+
+<!--controller sekce-->
+
+<script>
+var app = angular.module('myApp', []); <!--do promenne app dosadi nazev modulu AngularJS 'myApp'-->
+app.controller('myCtrl', function($scope) { <!--ovlada aplikaci 'myApp' parametr scope je prostredi ve kterem jsou definovany tzn odpovida sekci Model-->
+  $scope.firstName= "John"; <!-- v jednoduche aplikaci je pouze jeden scope, ve vetsich muzou byt ruzne, pak je dale k dispozici tzv. $rootScope
+  $scope.lastName= "Doe";
+  $scope.title = "PhD.";
+});
+</script> 
+
+</body>
+</html> 

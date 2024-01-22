@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<form ng-app="" name="myForm"> <!--aplikace angularJS, myForm-->
+    Email:
+    <input type="email" name="myAddress" ng-model="text"> <!--hodnota inputu myAdress typu email bude prirazena do text -->
+    <span ng-show="myForm.myAddress.$error.email">Not a valid e-mail address</span> <!-- pokud je zjistena chyba a ng-show vraci true tak se zobrazi upozorneni-->
+	
+	
+	<p>Valid: {{myForm.myAddress.$valid}} (if true, the value meets all criteria).</p> <!--zobrazi status inputu -->
+	<p>Dirty: {{myForm.myAddress.$dirty}} (if true, the value has been changed).</p>
+	<p>Touched: {{myForm.myAddress.$touched}} (if true, the field has been in focus).</p>
+</form> 
+
+
+</body>
+</html>

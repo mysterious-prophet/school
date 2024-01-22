@@ -1,0 +1,15 @@
+ <!DOCTYPE html>
+<html lang="en-US"> <!-- umozni pouzivat AngularJS verze 1.7.9 -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init="myCol='yellow'; quantity=1; cost=5">
+  
+	<input style="background-color:{{myCol}}" ng-model="myCol">
+	<p>Total in dollar: {{ quantity * cost }}</p>
+	<span ng-bind="quantity * cost"></span>
+	
+</div>
+
+</body>
+</html> 

@@ -1,0 +1,24 @@
+ <!DOCTYPE html>
+<html lang="en-US"> <!-- umozni pouzivat AngularJS verze 1.7.9 -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+<body>
+
+<div data-ng-app="scopeExample" data-ng-controller="MyController"> <!--definuje aplikaci "scopeExample" jiz kontroluje "MyController"-->
+  Your name:
+    <input type="text" data-ng-model="username"> <!--priradi inputu defaultne hodnotu 'world'-->
+    <button data-ng-click='sayHello()'>greet</button> <!--tlacitku priradi direktivu click s prirazenou funkci 'sayHello()'-->
+  {{greeting}}
+</div>
+
+<script>
+angular.module('scopeExample', []) <!--ovladac 'MyController' modulu 'scopeExample'-->
+.controller('MyController', ['$scope', function($scope) {
+  $scope.username = 'World'; <!--defaultne priradi prom 'username' hodnotu 'world'-->
+
+  $scope.sayHello = function() { <!-- sayHello je fce ktera zobrazi pozdrav--> 
+    $scope.greeting = 'Hello ' + $scope.username + '!';
+  };
+}]);
+</script>
+</body>
+</html> 
